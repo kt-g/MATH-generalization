@@ -1,0 +1,2 @@
+# finetune with full setting -> learn to ouput full answer
+python3 modeling/tune_gpt.py     --arch=openai-community/gpt2   --lora=True   --MATH-dataroot=data/MATH/train/*/*.json     --save-dir=output/finetune --save-file=finetunefull  --batch-size-per-replica=4 --epochs=1 --MATH-mode=full
